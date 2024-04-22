@@ -98,6 +98,7 @@ parachain/solochain that has EVM feature. This currently includes:
 * [Darwinia](https://github.com/darwinia-network/darwinia)
 * [Hyperledger Solang](https://github.com/hyperledger/solang)
 * [Magnet](https://github.com/Magport/Magnet)
+* [NeuroWeb](https://github.com/OriginTrail/neuroweb)
 * Please submit PRs to add another tool to this list.
 
 ## Membership
