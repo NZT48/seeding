@@ -148,6 +148,38 @@ on-chain, subject to all members' approvals. Below are examples of possible role
   to the community and handle certain communications.
 * **Special task force roles**. For example, launching a community-driven EVM parachain.
 
+### Inactivity
+
+To ensure that the collective is able to move forward and is not bloated with members of
+inactions, an inactivity check is utilized. We define the exact algorithm below. The gist of
+the algorithm is that we require each member to rate whether they think that each other member
+is active. A member must receive at least 1/3 of the votes to continue to be considered active.
+
+The checking period is every 24 weeks (roughly 6 months). During each period, a member is
+required to submit an on-chain extrinsic for inactivity check. The content of the extrinsic
+is a bitmap of all other members, where `1` represents that the member believes that the
+other member is active, and `0` otherwise. Repeated extrinsic submissions will override past
+ones.
+
+At the end of each checking period, the following is applied:
+
+* Set `N0` to be the total number of active members in the last checking period.
+* If a member did not submit any on-chain extrinsic, it is marked inactive.
+* All new inactive members are filtered out. Set `N1` to be the total number of new
+  (pending) active members.
+* Collect the bitmap of all submitted on-chain extrinsics. If the count of `1`s for a member
+  is greater than or equal to `N1 / 3` rounded down to the nearest integer, then it is set
+  as active. Otherwise, it is set as inactive.
+
+An inactive member keeps its rank, but will not be able to vote and will not count towards
+the required quorum. An inactive member will also have all of its roles set to inactive.
+
+The meaning of each inactive role is defined by each role. Usually, this means that the member
+will not have the privileges and responsibilities associated with the role.
+
+An inactive member is moved back to the active list by either a majority vote of the collective,
+or by a Polkadot referendum.
+
 ## Salary and sub-treasury
 
 The Polkadot EVM Collective has its own salary system and sub-treasury system for future
