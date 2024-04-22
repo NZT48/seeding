@@ -15,7 +15,7 @@ sections.
 The discussion of an on-chain Polkadot EVM collective has been under way during
 the early days of Frontier development. During the last few months, especially
 during Parity's "decentralization", we increasingly see the need of an on-chain
-collective as the Frontier project moves independent. The recent "OpenEVM"
+collective as the Frontier project moves independently. The recent "OpenEVM"
 movement (credit to *Giotto*) heavily accelerated the process.
 
 ## Goals
@@ -60,7 +60,7 @@ compiled first? How strict should we treat EVM compatibility? What is the
 timeline of EVM? Should we support EVM indefinitely, or is it purely there to
 provide a migration path to WASM/RISC-V?
 
-Such issues have big impact over dapp developers. If they develop on Polkadot,
+Such issues have a big impact on dapp developers. If they develop on Polkadot,
 we want to make sure they have certainty over what they may have and not have in
 the near future, so that they know that whatever tools they developed wouldn't
 be made obsolete by the core dev team. The Polkadot EVM collective aims to
@@ -83,7 +83,7 @@ and developed by an external team who wins the bid.
 ## Scope
 
 The scope of the collective is intentionally set to be specific and concrete in
-order to ensure a functional collaberation. One is eligible as a member of the
+order to ensure a functional collaboration. One is eligible as a member of the
 Polkadot EVM collective if one is involved in the development of a tool or a
 parachain/solochain that has EVM feature. This currently includes:
 
@@ -183,7 +183,7 @@ or by a Polkadot referendum.
 ## Salary and sub-treasury
 
 The Polkadot EVM Collective has its own salary system and sub-treasury system for future
-use. Their values, right now, is always 0. Any increase or funding is only done through
+use. Their values, right now, are always 0. Any increase or funding is only done through
 Polkadot referendums.
 
 ## Seeding
@@ -199,7 +199,7 @@ to add your name to the seeding list.
 ### A big collective or several small collectives
 
 While designing the collective, the first question we faced is whether we should have
-one single big collective -- one that covers all Polkadot ecocsystem ("The Polkadot
+one single big collective -- one that covers all Polkadot ecosystem ("The Polkadot
 Ecosystem Collective") -- or several small collectives, each focusing on a concrete and
 specific field in Polkadot.
 
@@ -209,7 +209,7 @@ We believe that small collectives are much more effective in carrying out its ta
   the mission of the collective. What belongs, and not belongs a collective is always
   extremely clear.
 * Small collectives are **composible**. It's possible to compose small collectives into
-  a big collective, should the need raises. Members of the big collective are instances of
+  a big collective, should the need arise. Members of the big collective are instances of
   small collectives, instead of people. On the other hand, it's difficult to divide a big
   collective into smaller collectives, if we realize that the former is not functioning
   well.
@@ -219,7 +219,7 @@ We believe that small collectives are much more effective in carrying out its ta
   nearly everyone.
 
 The only real drawback we know so far about small collectives is the **maintenance burden**. At
-this moment, all collectives require separate runtime pallets and also requiring runtime upgrade.
+this moment, all collectives require separate runtime pallets and also require runtime upgrade.
 As we expect at least a dozen new collectives in the near future, this is not scalable. We plan
 to address this by helping the Fellowship to develop a separate set of pallets that can host
 multiple collectives, with sub-treasury and salary features. Proposing a new collective becomes
@@ -233,7 +233,7 @@ to rank III). We designed this to be a **flat ranking system**. This is in contr
 Polkadot Fellowship Collective where we have a **deep ranking system**, with 7-9 ranks.
 
 We use a flat ranking system due to the practicality of the Polkadot EVM Collective, that we
-want to ensure that majority of members are actually on-board with a certain motion. The EVM collective
+want to ensure that the majority of members are actually on-board with a certain motion. The EVM collective
 deals less with visionary changes, but more with the practical reality of making EVM work well on
 Polkadot. We want to ensure that, for example, EVM metering changes done specifically for Polkadot
 are properly reviewed, that precompiles can work with each other, and that EVM contracts across
